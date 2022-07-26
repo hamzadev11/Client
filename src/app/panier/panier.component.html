@@ -1,0 +1,53 @@
+    <router-outlet></router-outlet>
+<body>
+  <!--================Cart Area =================-->
+    <body class="container">
+      <div class="cart_inner">
+        <div class="table-responsive">
+          <table class="table" >
+            <thead>
+              <tr>
+                <th scope="col">Produit</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Quantité</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let product of getCartDetails, let i = index">
+                <td>
+                  <div class="media">
+                    <div class="d-flex">
+                      <img src="../../assets/img/product/single-product/cart-3.jpg" alt="" width="300" height="300" />
+                    </div>
+                    <div class="media-body">
+                      {{product.nomProd}}
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  {{product.prix}}
+                </td>
+                <td>
+                  <div class="product_count">
+                    <input class="input-number" type="number" id="qte" value="1" min="0" max="10">
+
+                  </div>
+                </td>
+                <td>
+                  <h5>720.00 TND</h5>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+          <div class="checkout_btn_inner float-right">
+            <a class="btn_1" href="#">Continuer votre shopping</a>
+            <a class="btn_1 checkout_btn_1" href="commande"  >Commander</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+  <!--================End Cart Area =================-->
+    </body>

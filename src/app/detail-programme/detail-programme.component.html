@@ -1,0 +1,64 @@
+<!--================Blog Area =================-->
+<section class="blog_area single-post-area padding_top">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 posts-list">
+            <div class="single-post">
+               <div class="feature-img">
+                  <img class="img-fluid" src="img/blog/single_blog_1.png" alt="">
+               </div>
+               <div class="blog_details">
+                  <h1>{{programme.nomProg}}
+                  </h1>
+                  <div class="blog_item_img">
+                   <img class="card-img rounded-0" src="http://localhost:3000/{{programme.image}}" alt="">
+                   <br><br>
+                   
+                   <a href="/programme/{{programme._id}}" class="blog_item_date">
+                       <h3 id="dateJ">{{programme.dateOuverture| date:'d'}}</h3>
+                       <h3 id="hidate" hidden> </h3>
+                       <p>{{programme.dateOuverture| date:"MMMM":"":"fr" }}</p>
+                   </a>
+                   <br><br><br>
+               </div>
+                  <ul class="blog-info-link mt-3 mb-4">
+                   <strong><li><i class="bi bi-cloud-sun"></i>{{programme.saison}}</li></strong>                      
+                  </ul>
+                  <p class="excert">
+                     {{programme.description}}
+                     
+                  </p>
+                  
+                  <h2> Les règles à respecter pour chasser en toute sécurité  </h2>
+                  <div class="quote-wrapper">
+                     <div class="quotes">
+                       {{programme.regle}}
+                     </div>
+                  </div>
+                  <div id="map"></div>
+               </div>
+            </div>
+        
+            
+         
+           
+         </div>
+         <div class="col-lg-4">
+            <div class="blog_right_sidebar">
+               
+               <aside class="single_sidebar_widget post_category_widget">
+                  <h4 class="widget_title">Meteo</h4>
+     
+                  <app-weather-widget> </app-weather-widget>
+                  
+               </aside>
+               
+
+               
+
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--================Blog Area end =================-->
