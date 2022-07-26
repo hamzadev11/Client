@@ -31,11 +31,27 @@ import { Component } from '@angular/core';
 import { WeatherWidgetComponent } from './weather-widget/weather-widget.component';
 import { DetailProgrammeComponent } from './detail-programme/detail-programme.component';
 import { ListProgrammeComponent } from './Programme/list-programme/list-programme.component';
+
+import { TypeEvenementFormComponent } from './type-evenement-form/type-evenement-form.component';
+import { TypeEvenementListComponent } from './type-evenement-list/type-evenement-list.component';
+import { TypeEvenementDetailsComponent } from './type-evenement-details/type-evenement-details.component';
+import { EvenementListComponent } from './evenement-list/evenement-list.component';
+import { EvenementDetailsComponent } from './evenement-details/evenement-details.component';
+import { EvenementFormComponent } from './evenement-form/evenement-form.component';
+
+
+import { AuthentifComponent } from './authentif/authentif.component';
+import { LoginComponent } from './login/login.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { AcceuilComponent } from './acceuil/acceuil.component';
+import { SignupComponent } from './signup/signup.component';
+import { ProfilComponent } from './profil/profil.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    
     FooterComponent,
     ProductViewComponent,
     ProductComponent,
@@ -53,7 +69,22 @@ import { ListProgrammeComponent } from './Programme/list-programme/list-programm
     
     LivraisonComponent,
     PanierComponent,
-    CommandeComponent
+    CommandeComponent,
+    TypeEvenementFormComponent,
+    TypeEvenementListComponent,
+    TypeEvenementDetailsComponent,
+    EvenementListComponent,
+    EvenementDetailsComponent,
+    EvenementFormComponent,
+
+
+    ListProgrammeComponent,
+    AuthentifComponent,
+    LoginComponent,
+    ForgotpasswordComponent,
+    AcceuilComponent,
+    SignupComponent,
+    ProfilComponent
    
   ],
   imports: [
@@ -66,6 +97,7 @@ import { ListProgrammeComponent } from './Programme/list-programme/list-programm
     NgbModule,
     Ng2SearchPipeModule,
     RouterModule
+
   ],
   providers: [],
   bootstrap: [AppComponent, MenuComponent]

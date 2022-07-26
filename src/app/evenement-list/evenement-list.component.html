@@ -1,0 +1,129 @@
+<section class="blog_area padding_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="blog_left_sidebar">
+<!--**
+
+ <tr *ngFor="let evenement of list, let i= index">
+
+
+-->
+
+                        <article class="blog_item" *ngFor="let evenement of list, let i= index">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="/assets/img/blog/single_blog_1.png" alt="">
+                                <a href="#" class="blog_item_date">
+                                    <h3>15</h3>
+                                    <p>Jan</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" [routerLink]="'/evenement/show'" [queryParams]="{ _id: evenement._id, evenememntCity: evenement.lieu, typeEvenementId: evenement.typeEvenement}">
+                                    <h2>{{evenement.description}}</h2>
+                                    
+                                </a>
+                                <p>{{evenement._id}}</p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="far fa-user"></i> {{evenement.lieu}}</a></li>
+                                    <li><a href="#"><i class="far fa-user"></i> {{evenement.dateDeb}}</a></li>
+                                    <li><a href="#"><i class="far fa-user"></i> {{evenement.dateFin}}</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> {{evenement.instanceOrg}}</a></li>
+                                </ul>
+                            </div>
+                        </article>
+
+<!----------------------------------------------------------------------------------------
+                        <nav class="blog-pagination justify-content-center d-flex">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Previous">
+                                        <i class="ti-angle-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link">1</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="#" class="page-link">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link" aria-label="Next">
+                                        <i class="ti-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+--------------------------------------------->
+
+                    </div>
+                </div>
+
+
+            <div class="col-lg-4">
+                
+
+
+
+
+                <div class="bd-example" *ngIf = "!advancedSearch">
+<label for="customRange" class="form-label">Nombre de particpants : </label>
+<input type="range" class="form-range" id="customRange1" value="0" min = "0" max="1000" (change)="onRangeBarChange($event)">
+<div>
+
+<h3><span class="badge bg-secondary">{{rangeBarValue}}</span></h3>
+</div>
+</div>
+
+                                <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" 
+                                  [ngModel] ="advancedSearch" [checked]  [(ngModel)]="advancedSearch"
+                                >
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Advanced search : </label>
+                                </div> 
+<!--   update display of search according to parameters-->
+                <div  *ngIf = "advancedSearch == true">
+     
+                                <div class="dropdown ml-0 mb-3">
+                                <button class="btn btn-warning dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item  text-white w-100 " href="">searchFilterAll</a></li>
+                                    <li><a class="dropdown-item  text-white w-100 " href="">searchFilterID</a></li>
+                                    <li><a class="dropdown-item  text-white w-100 " href="">searchFilterOrganizor</a></li>
+                                    <li><a class="dropdown-item  text-white w-100 " href="">searchFilter 3</a></li>
+                                    <li><a class="dropdown-item  text-white w-100 " href="">searchFilter</a></li>
+                                
+                                </ul>
+                                </div>
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget search_widget">
+                            <form action="#">
+
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Search Keyword" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+
+                                    <div class="input-group mt-4 mb-3">
+                                        <input type="text" class="form-control" placeholder="Search Keyword" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+
+                                    </div>
+                                    <div class="input-group mt-2 mb-3">
+                                        <input type="text" class="form-control" placeholder="Search Keyword" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+
+                                    </div>
+                                    </div>
+                                </div>
+                                <button class="button rounded-0 primary-bg text-white w-100 btn_1 btn-warning" type="submit">Search</button>
+                            </form>
+                        </aside>
+
+                    </div>
+                </div>
+
+                <!----></div>
+            </div>
+        </div>
+    </section>

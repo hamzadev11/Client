@@ -1,0 +1,62 @@
+<div style="height:200 px;"></div>
+
+<div class="container">
+
+<div class="row" style="height:200px;">
+</div>
+
+<!------------------------------------------------------------------------------------------------------------>
+<div class="row">
+<div class="card text-white bg-primary mb-3 col-5 col-sm-5 col-md-5	col-lg-5	col-xl-5	col-xxl-5" style="max-width: 18rem;" >
+
+ 
+
+<div class="card-header">{{evenement.lieu}}</div>
+  <div class="card-body">
+    <h5 class="card-title">{{evenement.description}}.</h5>
+  <h5 class="card-title">{{evenement.dateDeb}}.</h5>
+<h5 class="card-title">{{evenement.dateFin}}.</h5>
+  </div>
+</div>
+<div class="card text-white bg-secondary mb-3   col-6 col-sm-6 col-md-6	col-lg-6	col-xl-4	col-xxl-4" style="max-width: 18rem;">
+
+<div class="card-header"><span>Température : </span>{{weather.main.temp}}</div>
+  <div class="card-body">
+    <h5 class="card-title">Température minimale : {{weather.main.temp_min}}</h5>
+    <h5 class="card-title">Température maximale : {{weather.main.temp_max}}</h5>
+    <h5 class="card-title">Pression Air : {{weather.main.pressure}}</h5>
+    <h5 class="card-title">Vitesse Vent : : {{weather.main.speed}}</h5>
+<h5 class="card-title">Degré Orientation du  Vent  : {{weather.wind.deg}}</h5>
+
+  </div>
+</div>
+<div class="card text-white bg-success mb-3    col-3 col-sm-4 col-md-4	col-lg-4	col-xl-4	col-xxl-4" style="max-width: 18rem;">
+  <div class="card-header">Organisateurs : </div>
+  <div class="card-body">
+    <h5 class="card-title">Organisateurs :{{evenement.instanceOrg}}</h5>
+  </div>
+</div>
+<div class="card text-white bg-danger mb-3   col-5 col-sm-5 col-md-5	col-lg-5	col-xl-5	col-xxl-5" style="max-width: 18rem;">
+
+
+<div class="card-header">Nombre de participants</div>
+  <div class="card-body">
+    <h5 class="card-title">nbrPartMax   : {{typeEvenement.nbrPartMax}}</h5>
+    <h5 class="card-title"><span>nbrPartMin   : </span>{{typeEvenement.nbrPartMin}}</h5>
+
+  </div>
+</div>
+
+
+<!------------------------------------------------------------------------------------------>
+
+
+              <div class="d-flex justify-content-start offset-4 offset-sm-4 offset-md-4  offset-lg-4 offset-xl-4 offset-xxl-4 ">
+                <button type="button" class="btn btn-warning mr-3">Subsribe to event</button>              
+                <button type="button" class="btn btn-danger">Unsubscribe to event</button>
+              </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------>
+
+</div>
