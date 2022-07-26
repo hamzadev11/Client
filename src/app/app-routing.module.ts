@@ -32,6 +32,8 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
 import { LoginComponent } from './login/login.component';
 import { ProfilComponent } from './profil/profil.component';
 import { SignupComponent } from './signup/signup.component';
+import { EspeceClientComponent } from './components/espece-client/espece-client.component';
+import { CategorieListComponent } from './components/categorie-list/categorie-list.component';
 
 const routes: Routes = [
   {    path :'', component:AppComponent },
@@ -65,7 +67,10 @@ const routes: Routes = [
   {path:'profil', component: ProfilComponent},
   {path:'membre', component: ProfilComponent},
 
+  { path: 'especes-list-client', component: EspeceClientComponent },
 
+ 
+  { path: 'categories-list', component: CategorieListComponent },
 
 
 

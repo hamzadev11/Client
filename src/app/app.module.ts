@@ -46,6 +46,15 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
 import { AcceuilComponent } from './acceuil/acceuil.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProfilComponent } from './profil/profil.component';
+import { EspeceCreateComponent } from './components/espece-create/espece-create.component';
+import { EspeceEditComponent } from './components/espece-edit/espece-edit.component';
+import { EspeceListComponent } from './components/espece-list/espece-list.component';
+import { CategorieCreateComponent } from './components/categorie-create/categorie-create.component';
+import { CategorieEditComponent } from './components/categorie-edit/categorie-edit.component';
+import { CategorieListComponent } from './components/categorie-list/categorie-list.component';
+import { ApiComponent } from './components/api/api.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { EspeceClientComponent } from './components/espece-client/espece-client.component';
 
 
 @NgModule({
@@ -84,7 +93,20 @@ import { ProfilComponent } from './profil/profil.component';
     ForgotpasswordComponent,
     AcceuilComponent,
     SignupComponent,
-    ProfilComponent
+    ProfilComponent,
+
+
+    EspeceCreateComponent,
+    EspeceEditComponent,
+    EspeceListComponent,
+    CategorieCreateComponent,
+    CategorieEditComponent,
+    CategorieListComponent,
+ 
+    
+    EspeceClientComponent,
+    NavbarComponent,
+    ApiComponent
    
   ],
   imports: [
